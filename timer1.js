@@ -1,12 +1,8 @@
-const parameter = process.argv.slice(2);
-
-let time = parameter.filter(number => {
-  return number > 0;
-});
-
 const timer = function() {
-  //const argv = process.argv.slice(2)
-  //time = time * 1000; //milisecond to second
+  const parameter = process.argv.slice(2);
+  let time = parameter.filter(number => {
+    return number > 0;
+  });
 	time = time.map(number => number * 1000);
 
   //I've used this code snippet for using system sound for macOS
